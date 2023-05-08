@@ -6,7 +6,8 @@
  * @line_number: line number
  * Return: Function or NULL if doesn´t exist
 */
-void get_func(stack_t **stack, char *op, unsigned int line_number)
+
+void (*get_func(char *op))(stack_t **stack, unsigned int line_number)
 {
 	int i = 0;
 
@@ -18,7 +19,7 @@ void get_func(stack_t **stack, char *op, unsigned int line_number)
 
 	while (i < 2)
 	{
-		if (all_ops[i].opcode[0] == op[0])
+		if (strcmp(all_ops[i].opcode, op) == 0)
 		{
 			return (all_ops[i].f);
 		}

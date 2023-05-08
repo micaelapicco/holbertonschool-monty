@@ -1,5 +1,5 @@
-#ifndef MONTY.H
-#define MONTY.H
+#ifndef MONTY_H
+#define MONTY_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -44,7 +44,7 @@ typedef struct instruction_s
 #define DELIM " \n\t"
 
 /* get correct function*/
-void get_func(stack_t **stack, char *op, unsigned int line_number);
+void (*get_func(char *op))(stack_t **stack, unsigned int line_number);
 
 /*monty_functions1*/
 void _push(stack_t **stack, unsigned int line_number);

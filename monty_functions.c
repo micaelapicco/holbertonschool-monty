@@ -20,7 +20,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	token = strtok(NULL, DELIM);
 	if (!token || !stack)
 	{
-		printf("L%u: usage: push integer", line_number);
+		printf("L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	num = atoi(token);
