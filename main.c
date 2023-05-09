@@ -31,6 +31,8 @@ int main(int argc, char **argv)
 	{
 		line_number++;
 		token = strtok(buffer, DELIM);
+		if (!token)
+			continue;
 		f = get_func(token);
 		if (!f)
 		{
