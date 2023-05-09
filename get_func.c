@@ -1,9 +1,7 @@
 #include "monty.h"
 /**
  * get_func - get correct function
- * @stack: point to head of stack data structure
  * @op: operator from getline
- * @line_number: line number
  * Return: Function or NULL if doesn´t exist
 */
 

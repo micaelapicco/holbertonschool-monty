@@ -46,7 +46,7 @@ typedef struct instruction_s
 /* get correct function*/
 void (*get_func(char *op))(stack_t **stack, unsigned int line_number);
 
-/*monty_functions1*/
+/*monty_functions*/
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
 

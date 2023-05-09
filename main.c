@@ -9,7 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	char *buffer = NULL, *token = NULL; 
+	char *buffer = NULL, *token = NULL;
 	stack_t *stack = NULL;
 	FILE *file = NULL;
 	int line_number = 0;
