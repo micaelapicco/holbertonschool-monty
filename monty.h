@@ -43,8 +43,9 @@ typedef struct instruction_s
 /*delimiters*/
 #define DELIM " \n\t"
 
-/*function to free stack*/
+/*auxiliary functions*/
 void _free(stack_t *stack);
+int _isdigit (char string[]);
 
 /* get correct function*/
 void (*get_func(char *op))(stack_t **stack, unsigned int line_number);
