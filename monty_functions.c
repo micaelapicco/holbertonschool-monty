@@ -18,12 +18,12 @@ void _push(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	token = strtok(NULL, DELIM);
-	num = atoi(token);
-	if (!token || !stack || !num)
+	if (!token || !stack)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
+	num = atoi(token);
 	element->n = num;
 	element->prev = NULL;
 	element->next = *stack;
