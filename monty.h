@@ -43,6 +43,9 @@ typedef struct instruction_s
 /*delimiters*/
 #define DELIM " \n\t"
 
+/*function to free stack*/
+void _free(stack_t *stack);
+
 /* get correct function*/
 void (*get_func(char *op))(stack_t **stack, unsigned int line_number);
 

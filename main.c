@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		f(&stack, line_number);
 	}
 	fclose(file);
-	free(stack);
+	_free(stack);
 	free(token);
 	return (0);
 }
