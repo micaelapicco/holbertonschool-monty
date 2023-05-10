@@ -1,5 +1,22 @@
 #include "monty.h"
 /**
+ * _free - free stack
+ * @stack: stack
+ * Return: Nothing
+*/
+void _free(stack_t *stack)
+{
+	stack_t *temp;
+
+	while (stack != NULL)
+	{
+		temp = stack;
+		stack = stack->next;
+		free(temp);
+	}
+}
+
+/**
  * _isdigit - checks if string has a letter in it
  * @string: string to check
  * Return: 0 if letter found, 1 if not
