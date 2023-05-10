@@ -1,6 +1,7 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+/*libraries*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -40,6 +41,7 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
 /*delimiters*/
 #define DELIM " \n\t"
 
@@ -50,13 +52,12 @@ int _isdigit (char string[]);
 /* get correct function*/
 void (*get_func(char *op))(stack_t **stack, unsigned int line_number);
 
-/*monty_functions*/
+/*functions*/
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
 void _pop(stack_t **stack, unsigned int line_number);
-/* void _swap(stack_t **stack, unsigned int line_number);
-void _add(stack_t **stack, unsigned int line_number);
-void _nop(stack_t **stack, unsigned int line_number);*/
-
+void _nop(stack_t **stack, unsigned int line_number);
+void _swap(stack_t **stack, unsigned int line_number);
+/*void _add(stack_t **stack, unsigned int line_number);*/
 #endif

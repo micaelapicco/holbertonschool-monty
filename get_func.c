@@ -14,14 +14,13 @@ void (*get_func(char *op))(stack_t **stack, unsigned int line_number)
 		{"pall", _pall},
 		{"pint", _pint},
 		{"pop", _pop},
-/*
-*		{"add", _add},
-*		{"nop", _nop},
-*/
+		{"nop", _nop},
+		{"swap", _swap},
+/*		{"add", _add},*/
 		{NULL, NULL}
 	};
 
-	while (i < 4)
+	while (i < 6)
 	{
 		if (strcmp(all_ops[i].opcode, op) == 0)
 		{
