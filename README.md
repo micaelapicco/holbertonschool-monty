@@ -86,3 +86,7 @@ julien@ubuntu:~/monty$
 
 ## test
 - contains files to test
+
+# Authors
+- Sol Puente [@solp22](https://github.com/solp22/solp22)
+- Micaela Picco [@micaelapicco](https://www.github.com/micaelapicco)
